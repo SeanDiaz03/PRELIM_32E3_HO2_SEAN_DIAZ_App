@@ -1,0 +1,109 @@
+/* App.css */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animations for various elements */
+.header-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: slideIn 2s ease-out; /* Apply the slideIn animation */
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  animation: bounce 1.5s infinite alternate; /* Bounce animation for heading */
+}
+
+.subheading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  animation: fadeUp 1.5s ease-out; /* Fade and move up animation */
+}
+
+.intro-text {
+  font-size: 20px;
+  max-width: 650px;
+  opacity: 0.9;
+  animation: fadeUp 2s ease-out; /* Fade and move up animation */
+}
+
+.skills-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  animation: fadeUp 2s ease-out; /* Fade and move up animation */
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  animation: fadeUp 2.5s ease-out; /* Fade and move up animation for skills list */
+}
